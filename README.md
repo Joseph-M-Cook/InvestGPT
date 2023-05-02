@@ -10,5 +10,7 @@ Implemented ${ticker} to retrieve information on a current stock. (Limited to 5 
 
 
 References: 
+
 https://github.com/ErikBoesen/eightball
+
 https://github.com/VRSEN/chatgtp-bing-clone
