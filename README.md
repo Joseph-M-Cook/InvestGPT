@@ -10,6 +10,9 @@ A powerful financial assistant chatbot powered by OpenAI's GPT-4 and integrated 
 - Integrated with GroupMe API for easy communication
 - Efficient token usage with limited message memory
 ## Installation
+## Demo
+![Ex. 1](https://drive.google.com/file/d/1OUwvzZn5f0qOjMYlaTqoOME8g4zQrffc/view?usp=share_link)
+![Ex. 2](https://drive.google.com/file/d/1-dzwLEVPWeZ-z7xsANeE9sq7XyARy5ZJ/view?usp=share_link)
 
 1. Clone the repository:
 
