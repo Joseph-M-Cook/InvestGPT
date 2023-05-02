@@ -1,0 +1,6 @@
+google-api-python-client
+Flask
+requests
+openai
+json
+os
