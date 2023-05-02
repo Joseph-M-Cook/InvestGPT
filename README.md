@@ -11,7 +11,7 @@ A powerful financial assistant chatbot powered by OpenAI's GPT-4 and integrated 
 - Efficient token usage with limited message memory
 ## Installation
 ## Demo
-![Ex. 1](https://drive.google.com/file/d/1OUwvzZn5f0qOjMYlaTqoOME8g4zQrffc/view?usp=share_link)
+![Ex. 1](https://github.com/Joseph-M-Cook/AIMoneyMan/blob/557a6730ec4d937ca42b4d31c38090c0802a6d88/IMG_0116.jpg)
 ![Ex. 2](https://drive.google.com/file/d/1-dzwLEVPWeZ-z7xsANeE9sq7XyARy5ZJ/view?usp=share_link)
 
 1. Clone the repository:
