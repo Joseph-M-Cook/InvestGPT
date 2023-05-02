@@ -22,6 +22,10 @@ git clone https://github.com/Joseph-M-Cook/AIMoneyMan.git
 ```bash 
 pip install -r requirements.txt
 ```
+3. Set up API keys and private IDs in the main Python file.
+
+4. Deploy the chatbot on a server like PythonAnywhere.
+
 
 ## Usage
 - To interact with AI Money Man, mention the bot in a GroupMe chat using @AI Money Man followed by your question or query.
