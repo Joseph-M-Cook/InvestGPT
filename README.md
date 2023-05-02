@@ -5,7 +5,7 @@ Runs on PythonAnywhere server
 
 Introducing conversational AI with GPT-4 by OpenAI, integrated with full access to the internet via Google’s API. Limited to one message memory to save token usage.
 
-Implemented ${ticker} to retrieve information on a current stock. (Limited to 5 requests per minute)
+Implemented ${ticker} to retrieve live information on a current stock. (Limited to 5 requests per minute)
 
 
 
