@@ -8,7 +8,6 @@ A powerful financial assistant chatbot powered by OpenAI's GPT-4 and integrated 
 - Full access to the internet via Google Search API
 - Real-time stock information using Alpha Vantage API
 - Integrated with GroupMe API for easy communication
-- Efficient token usage with limited message memory
 ## Installation
 ## Demo
 ![Ex. 1](https://github.com/Joseph-M-Cook/AIMoneyMan/blob/557a6730ec4d937ca42b4d31c38090c0802a6d88/IMG_0116.jpg)
