@@ -7,7 +7,7 @@ Introducing conversational AI with GPT-4 by OpenAI, integrated with full access 
 
 Implemented ${ticker} to retrieve live information on a current stock. (Limited to 5 requests per minute)
 
-
+Currently runs in a GroupMe chat with 120+ memebers.
 
 References: 
 
