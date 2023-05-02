@@ -19,7 +19,6 @@ A powerful financial assistant chatbot powered by OpenAI's GPT-4 and integrated 
 ```bash
 git clone https://github.com/Joseph-M-Cook/AIMoneyMan.git
 ```
-
 2. Install the required dependencies:
 
 ```bash 
