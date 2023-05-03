@@ -112,9 +112,9 @@ def process_message(message):
             for i in data['sources']:
                 sources += i + '\n'
 
-            send_message(data['content'])
+            send_message(data['content'], bot_id)
             time.sleep(.2)
-            send_message(sources)
+            send_message(sources, bot_id)
 
         if text and text[0] == '$':
             stock_symbol = text[1:]
