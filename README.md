@@ -1,4 +1,4 @@
-# StocksBot AI
+# MarketBot AI
 
 A powerful financial assistant chatbot powered by OpenAI's GPT-4 and integrated with Google Search API, Alpha Vantage API, and GroupMe API. This chatbot can answer finance-related questions using the internet and provide real-time stock information.
 
@@ -30,7 +30,7 @@ pip install -r requirements.txt
 
 
 ## Usage
-- To interact with StocksBot AI, mention the bot in a GroupMe chat using @StocksBot AI followed by your question or query.
+- To interact with MarketBot AI, mention the bot in a GroupMe chat using @MarketBot AI followed by your question or query.
 - To get real-time stock information, type the stock symbol with a $ prefix (e.g., $AAPL).
 
 ## References
