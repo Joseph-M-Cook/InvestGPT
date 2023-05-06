@@ -1,4 +1,4 @@
-# AI StockMarketBot 
+# AI Money Man v2.0
 
 A powerful financial assistant chatbot powered by OpenAI's GPT-4 and integrated with Google Search API, Alpha Vantage API, and GroupMe API. This chatbot can answer finance-related questions using the internet and provide real-time stock information.
 
@@ -8,7 +8,6 @@ A powerful financial assistant chatbot powered by OpenAI's GPT-4 and integrated 
 - Full access to the internet via Google Search API
 - Real-time stock information using Alpha Vantage API
 - Integrated with GroupMe API for easy communication
-- Currently lives in a GroupMe groupchat with 120+ members
 ## Installation
 ## Demo
 ![Ex. 1](https://github.com/Joseph-M-Cook/AIMoneyMan/blob/469460ca05176c035dc30081bff44213d0119229/Demo1.jpg)
@@ -30,7 +29,7 @@ pip install -r requirements.txt
 
 
 ## Usage
-- To interact with MarketBot AI, mention the bot in a GroupMe chat using @MarketBot AI followed by your question or query.
+- To interact with AI Money Man, mention the bot in a GroupMe chat using @AI Money Man followed by your question or query.
 - To get real-time stock information, type the stock symbol with a $ prefix (e.g., $AAPL).
 
 ## References
