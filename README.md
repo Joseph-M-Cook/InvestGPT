@@ -1,4 +1,4 @@
-# Stock-MarketBot AI
+# AI StockMarketBot 
 
 A powerful financial assistant chatbot powered by OpenAI's GPT-4 and integrated with Google Search API, Alpha Vantage API, and GroupMe API. This chatbot can answer finance-related questions using the internet and provide real-time stock information.
 
