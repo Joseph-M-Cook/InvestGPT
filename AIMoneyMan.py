@@ -10,7 +10,6 @@ app = Flask(__name__)
 GROUPME_API_URL = "https://api.groupme.com/v3/bots/post"
 
 # API Keys and Private IDs
-BOT_ID = 'YOUR_BOT_ID'
 openai.api_key = "YOUR_OPEN_AI_API_KEY"
 GOOGLE_DEV_KEY = "YOUR_GOOGLE_DEV_KEY"
 GOOGLE_CX_KEY = "GOOGLE_CX_KEY"
@@ -101,6 +100,7 @@ def get_stock_info(stock_symbol):
 def process_message(message):
     text = message.get('text')
     sender_type = message.get('sender_type')
+    bot_id = message.get('bot_id')
 
     if sender_type != 'bot':
         if text and '$AI' in text:
@@ -126,15 +126,16 @@ def process_message(message):
                              f"💵 Current Price: ${current_stock_price:.2f}\n"
                              f"📈 Day Gain: {day_gain_percent:.2f}%\n"
                              f"📊 Trading Volume: {trading_volume:,}"
-                             f"\n{yahoo_finance_link}")
+                             f"\n{yahoo_finance_link}", 
+                             bot_id)
             else:
-                send_message("Invalid stock symbol or unavailable data.")
+                send_message("Invalid stock symbol or unavailable data.", bot_id)
 
 
 # Function to send plain text message into GroupMe
-def send_message(text):
+def send_message(text, bot_id):
     data = {
-        "bot_id": BOT_ID,
+        "bot_id": bot_id,
         "text": text
     }
     return requests.post(GROUPME_API_URL, json=data).status_code
