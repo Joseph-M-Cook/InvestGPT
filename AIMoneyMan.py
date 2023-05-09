@@ -10,10 +10,10 @@ app = Flask(__name__)
 GROUPME_API_URL = "https://api.groupme.com/v3/bots/post"
 
 # API Keys and Private IDs
-openai.api_key = "YOUR_OPEN_AI_API_KEY"
-GOOGLE_DEV_KEY = "YOUR_GOOGLE_DEV_KEY"
-GOOGLE_CX_KEY = "GOOGLE_CX_KEY"
-ALPHA_VANTAGE_KEY = "YOUR_ALPHA_VANTAGE_KEY"
+openai.api_key = ""
+GOOGLE_DEV_KEY = ""
+GOOGLE_CX_KEY = ""
+ALPHA_VANTAGE_KEY = ''
 
 # Reference: https://github.com/VRSEN/chatgtp-bing-clone
 class AIMoneyMan():
@@ -38,7 +38,7 @@ class AIMoneyMan():
                                                                        "Query:"})
 
         search_query = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4",
             messages=messages,
             temperature=0,
         )['choices'][0]['message']['content']
@@ -112,9 +112,9 @@ def process_message(message):
             for i in data['sources']:
                 sources += i + '\n'
 
-            send_message(data['content'])
+            send_message(data['content'], bot_id)
             time.sleep(.2)
-            send_message(sources)
+            send_message(sources, bot_id)
 
         if text and text[0] == '$' and '$AI'not in text:
             stock_symbol = text[1:]
@@ -126,7 +126,7 @@ def process_message(message):
                              f"💵 Current Price: ${current_stock_price:.2f}\n"
                              f"📈 Day Gain: {day_gain_percent:.2f}%\n"
                              f"📊 Trading Volume: {trading_volume:,}"
-                             f"\n{yahoo_finance_link}", 
+                             f"\n{yahoo_finance_link}",
                              bot_id)
             else:
                 send_message("Invalid stock symbol or unavailable data.", bot_id)
