@@ -11,10 +11,10 @@ GROUPME_API_URL = "https://api.groupme.com/v3/bots/post"
 
 # API Keys and Private IDs
 BOT_ID = 'YOUR_BOT_ID'
-openai.api_key = 'YOUR_OPENAI_API_KEY'
-GOOGLE_DEV_KEY = 'YOUR_GOOGLE_DEV_KEY'
-GOOGLE_CX_KEY = 'YOUR_GOOGLE_CX_KEY'
-ALPHA_VANTAGE_KEY = 'YOUR_ALPHA_VANTAGE_KEY'
+openai.api_key = "YOUR_OPEN_AI_API_KEY"
+GOOGLE_DEV_KEY = "YOUR_GOOGLE_DEV_KEY"
+GOOGLE_CX_KEY = "GOOGLE_CX_KEY"
+ALPHA_VANTAGE_KEY = "YOUR_ALPHA_VANTAGE_KEY"
 
 # Reference: https://github.com/VRSEN/chatgtp-bing-clone
 class AIMoneyMan():
@@ -69,7 +69,7 @@ class AIMoneyMan():
 
         # Generate response
         response = openai.ChatCompletion.create(
-            model="gpt-4", 
+            model="gpt-3.5-turbo",
             messages=messages,
             temperature=0.4,
             max_tokens = 350,
@@ -96,16 +96,16 @@ def get_stock_info(stock_symbol):
     print(f"Error fetching stock data: {response.status_code}")
     return None, None, None
 
-# Reference: https://github.com/ErikBoesen/eightball
+
 # Function to process and send incoming message and handle cases
 def process_message(message):
     text = message.get('text')
     sender_type = message.get('sender_type')
 
     if sender_type != 'bot':
-        if text and '@AI Money Man' in text:
+        if text and '$AI' in text:
             bot = AIMoneyMan()
-            msg = bot.run_text(text[len('@AI Money Man'):])
+            msg = bot.run_text(text[len('$AI'):])
             data = json.loads(msg)
 
             sources = "Sources:\n"
@@ -116,7 +116,7 @@ def process_message(message):
             time.sleep(.2)
             send_message(sources)
 
-        if text and text[0] == '$':
+        if text and text[0] == '$' and '$AI'not in text:
             stock_symbol = text[1:]
             current_stock_price, day_gain_percent, trading_volume = get_stock_info(stock_symbol)
             if current_stock_price and day_gain_percent and trading_volume:
