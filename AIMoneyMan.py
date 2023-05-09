@@ -68,7 +68,7 @@ class AIMoneyMan():
 
         # Generate response
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4",
             messages=messages,
             temperature=0.4,
             max_tokens = 350,
